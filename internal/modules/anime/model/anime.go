@@ -1,4 +1,4 @@
-package domain
+package model
 
 import (
 	"github.com/google/uuid"
@@ -6,7 +6,7 @@ import (
 )
 
 type Anime struct {
-	ID     uuid.UUID `gorm:"type:uuid;default:uuid_generate_v4();primaryKey"`
+	ID     uuid.UUID `gorm:"type:uuid;primaryKey"`
 	Title  string
 	Studio string
 	Years  string
